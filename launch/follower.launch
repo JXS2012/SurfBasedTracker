@@ -1,0 +1,10 @@
+<launch>
+  <!-- Set this to your camera's name -->
+  <arg name="cam" value="creative_cam" />
+
+  <!-- Start the GSCAM node -->
+  <env name="GSCAM_CONFIG" value="v4l2src device=/dev/video1 ! video/x-raw-yuv,framerate=30/1,width=640,height=480 ! ffmpegcolorspace " />
+  <node pkg="gscam" type="gscam" name="cam">
+    <param name="camera_name" value="cam" />
+  </node>
+</launch>

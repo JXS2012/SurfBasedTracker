@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/jianxin/rosbuild_ws/sandbox/follower/build/devel/setup.sh
